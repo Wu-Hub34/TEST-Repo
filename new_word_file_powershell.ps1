@@ -1,5 +1,6 @@
 #Create Word File on Desktop
-$word = New-Object -ComObject Word.Application
+New-Item "$env:userprofile\Desktop\test.txt"
+<# $word = New-Object -ComObject Word.Application
 $doc = $word.Documents.Add()
 $doc.SaveAs("$env:userprofile\Desktop\testOBTScript.docx")
-$word.Quit()
+$word.Quit() #>
